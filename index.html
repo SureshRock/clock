@@ -84,6 +84,7 @@
             font-weight: 600;
             display: inline-block;
             transform: rotate(calc(-30deg*var(--i)));
+            font-family: clockfont;
         }
 
         .circle {
@@ -160,6 +161,7 @@
             text-align: center;
             font-weight: 500;
             color: var(--clr);
+            font-family: clockfont;
         }
 
         #time div:nth-child(1)::after,
@@ -192,7 +194,7 @@
         }
 
         .title {
-            font-family: fair;
+            font-family: clockfont;
             text-transform: uppercase;
             font-style: italic;
             font-size: 30px;
@@ -213,6 +215,10 @@
         @font-face {
             font-family: fair;
             src: url(./font/fair.ttf);
+        }
+        @font-face {
+            font-family: clockfont;
+            src: url(./font/clockfont.otf);
         }
     </style>
 </head>
